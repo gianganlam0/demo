@@ -127,7 +127,7 @@ $config['mongo_db']['active_config_group'] = 'default';
  */
 $config['mongo_db']['default'] = [
 	'settings' => [
-		'auth'             => TRUE,
+		'auth'             => false,
 		'debug'            => TRUE,
 		'return_as'        => 'array',
 		'auto_reset_query' => TRUE
@@ -136,11 +136,11 @@ $config['mongo_db']['default'] = [
 	'connection_string' => '',
 
 	'connection' => [
-		'host'          => '',
-		'port'          => '',
+		'host'          => 'localhost',
+		'port'          => '27017',
 		'user_name'     => '',
 		'user_password' => '',
-		'db_name'       => '',
+		'db_name'       => 'igniter',
 		'db_options'    => []
 	],
 
