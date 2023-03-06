@@ -1,7 +1,7 @@
 <?php
 
 class MyModel extends CI_Model{
-	function echoSomething(){
-		echo "Hello World!";
+	function genData(){
+		return ['name'=>'John Doe', 'age'=>25];
 	}
 }
