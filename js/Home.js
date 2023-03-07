@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    console.log(base_url());
+    // Swal.fire('Any fool can use a computer')
 });

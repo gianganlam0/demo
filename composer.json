@@ -14,7 +14,8 @@
         "paragonie/random_compat": "Provides better randomness in PHP 5.x"
     },
     "require": {
-        "php": ">=5.3.7"
+        "php": ">=5.3.7",
+        "phpmailer/phpmailer": "^6.8"
     },
     "scripts": {
         "test:coverage": [
