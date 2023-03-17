@@ -127,20 +127,19 @@ $config['mongo_db']['active_config_group'] = 'default';
  */
 $config['mongo_db']['default'] = [
 	'settings' => [
-		'auth'             => false,
+		'auth'             => true,
 		'debug'            => TRUE,
 		'return_as'        => 'array',
 		'auto_reset_query' => TRUE
 	],
 
-	'connection_string' => '',
-
+	'connection_string' => 'mongodb://u525ubpm6wvipi2oud8s:WutWIOLv0HCtn0cCgCgL@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/bcidswg15jjlscg?replicaSet=rs0',
 	'connection' => [
-		'host'          => 'localhost',
-		'port'          => '27017',
+		'host'          => '',
+		'port'          => '',
 		'user_name'     => '',
 		'user_password' => '',
-		'db_name'       => 'demo',
+		'db_name'       => '',
 		'db_options'    => []
 	],
 

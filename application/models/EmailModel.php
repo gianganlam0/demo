@@ -14,8 +14,8 @@ class EmailModel extends CI_Model{
 		$this->mailPayload->SMTPSecure = 'ssl';
 		$this->mailPayload->Port     = 465;
 		$this->mailPayload->SMTPAuth = true;
-		$this->mailPayload->Username = 'vios.tee97@gmail.com';
-		$this->mailPayload->Password = 'ahggelkkbxwzvslw';
+		$this->mailPayload->Username = 'vios.tee978@gmail.com';
+		$this->mailPayload->Password = 'dfjqtxeqxmybwkcm';
 		$this->mailPayload->CharSet = $charSet;
 		if(is_string($to)) $to = [$to];
 		$this->mailPayload->To = $to;

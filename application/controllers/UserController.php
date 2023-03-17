@@ -82,7 +82,7 @@ class UserController extends CI_Controller {
 
 				$user = $this->UserModel->getUser(['email'=>$email])[0];
 				$userId = $user['_id'];
-				$fileId = '640a9eafa29a32ea7148dbf1';//hard code
+				$fileId = '64143b71e08bbbc00b6eaeeb';//hard code
 				$plainText = $userId.'_'.$fileId;
 				//encrypt
 				$cipherText = $this->encryption->encrypt($plainText);
@@ -90,7 +90,7 @@ class UserController extends CI_Controller {
 				$cipherText = urlencode($cipherText);
 
 				//inject image tag to email body to check if user open email
-				$url = base_url()."usercontroller/openMail?token=$cipherText";
+				$url = base_url()."usercontroller/openMail.png?token=$cipherText";
 				//send email
 				$to = $email;
 				$sub = "Link tải file";

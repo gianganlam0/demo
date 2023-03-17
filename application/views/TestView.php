@@ -25,25 +25,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <body>
 	<?php
-		$this->load->view('/components/header');
-		$dropdownlist = new \Kendo\UI\DropDownList('DropDownList');
-		$dropdownlist->attr('style', 'width: 50%');
-		$dropdownlist->attr('class', 'text-center');
-		//simple data
-		$data = array(
-			array('text' => 'Item 1', 'value' => 1),
-			array('text' => 'Item 2', 'value' => 2),
-			array('text' => 'Item 3', 'value' => 3),
-			array('text' => 'Item 4', 'value' => 4)
-		);
-		$dropdownlist->dataSource($data);
-		$dropdownlist->dataTextField('text');
-		$dropdownlist->dataValueField('value');
-		$dropdownlist->value(1997);
-
-
-		echo $dropdownlist->render();
-
 	?>
 </body>
 
