@@ -4,6 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
@@ -14,29 +15,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2023.1.117/styles/kendo.common-bootstrap.min.css">
 	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2023.1.117/styles/kendo.bootstrap.min.css">
+	<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2023.1.117/styles/kendo.bootstrap.mobile.min.css">
 	<script src="https://kendo.cdn.telerik.com/2023.1.117/js/kendo.all.min.js"></script>
 	<script src="/assets/js/Utils.js"></script>
 	<script src="/assets/js/Header.js"></script>
 	<link rel="stylesheet" href="/assets/css/Header.css">
-	<script src="/assets/js/Home.js"></script>
-	<link rel="stylesheet" href="/assets/css/Home.css">
-	<title>Trang chủ</title>
+	<script src="/assets/js/Admin.js"></script>
+	<link rel="stylesheet" href="/assets/css/Admin.css">
+	<title>Admin</title>
 </head>
 
 <body>
-	<?php $this->load->view("/components/header");?>
-
-	<div class="container-fluid mx-auto">
-		<div class="row d-flex justify-content-center">
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-				<div class="card">	
-					<form id="info-form"><h3 class="text-center">Nhập thông tin cá nhân</h3>
-					</form>
-				</div>
+	<?php $this->load->view('/components/header');?>
+	
+	<div class="container my-1">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">Danh sách người đã đăng ký</h1>
 			</div>
 		</div>
-	</div>
+		<div id='grid'></div>
 </body>
+
 </html>
-
-

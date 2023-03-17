@@ -58,7 +58,8 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('mongo_db'=>'db','preloader','phpmailerlib');
+$autoload['libraries'] = array('mongo_db'=>'db','phpmailerlib','encryption','session',
+'pagination');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +90,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('url','string','utils');
 
 /*
 | -------------------------------------------------------------------

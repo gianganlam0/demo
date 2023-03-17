@@ -15,7 +15,8 @@
     },
     "require": {
         "php": ">=5.3.7",
-        "phpmailer/phpmailer": "^6.8"
+        "phpmailer/phpmailer": "^6.8",
+        "pda/pheanstalk": "~3"
     },
     "scripts": {
         "test:coverage": [

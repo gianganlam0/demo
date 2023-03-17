@@ -1,0 +1,27 @@
+.header{
+	background-color: #000;
+	color: #fff; 
+	padding: 10px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+}
+#header-logo{
+	width: 70%;
+	height: 70%;
+}
+.nav a{
+	color: #fff;
+	font-size: 1em;
+}
+.nav a.selected{
+	color: yellow;
+}
+/* mobile */
+@media screen and (max-width: 498px) {
+	.header{
+		height: 20vh;
+	}
+}

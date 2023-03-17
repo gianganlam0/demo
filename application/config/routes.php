@@ -53,4 +53,7 @@ $route['default_controller'] = 'homecontroller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// $route['product/(:any)'] = 'product/index/$1';
+// $route['UserController/(:any)'] = '$1'.'controller';
+$route['login'] = 'UserController/login';
+$route['admin'] = 'admin/dashboard';
+$route['test'] = 'homecontroller/test';
